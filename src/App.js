@@ -5,6 +5,9 @@ import NavComp from "./components/NavComp";
 import YoutubeComp from "./components/YoutubeComp";
 import { Element } from "react-scroll";
 import { StickyContainer } from "react-sticky";
+import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
+import Bio from "./components/Bio";
 
 const Spacer = () => {
   return <div className="spacer"></div>;
@@ -64,22 +67,29 @@ function App() {
           alt="img - hero"
         />
       </div>
-        <NavComp />
-      {/* <StickyContainer>
-      </StickyContainer> */}
+
+      <NavComp />
       <Spacer />
       <Element name="portfolio" className="scrollable-container">
         <YoutubeComp />
       </Element>
+      <Spacer />
       <Element name="achievement" className="scrollable-container">
         <Achievements />
       </Element>
-      <Element name="contact" className="scrollable-container">
-        <Achievements />
-      </Element>
+      <Spacer />
       <Element name="bio" className="scrollable-container">
-        <Achievements />
+        <Bio />
       </Element>
+      <Spacer />
+      <Element name="gallery" className="scrollable-container">
+        <Gallery />
+      </Element>
+      <Spacer />
+      <Element name="contact" className="scrollable-container">
+        <Contact />
+      </Element>
+      <Spacer />
     </div>
   );
 }

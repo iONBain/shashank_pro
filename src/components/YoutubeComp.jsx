@@ -20,19 +20,20 @@ const YoutubeComp = () => {
   ];
   return (
     <React.Fragment>
-        <h2 className="text-center p-20">Portfolio</h2>
-    <section class="flex-row width-80 aic gap-20 m-auto flex-wrap">
-      {arrVideos.map(({ title, src }) => (
-        <iframe
-          min-width="22%"
-          src={src}
-          title={title}
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      ))}
-    </section>
+      <h2 className="text-center p-20">Portfolio</h2>
+      <section class="flex-row width-80 sp-bw m-auto flex-wrap">
+        {arrVideos.map(({ title, src }) => (
+          <iframe
+            // min-width="22%"
+            src={src}
+            title={title}
+            frameborder="0"
+            className="p-20"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        ))}
+      </section>
     </React.Fragment>
   );
 };

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Components.css";
 import { Link } from "react-scroll";
 
-const NavComp = ({ isTop }) => {
+const NavComp = () => {
   const navArr = ["Portfolio", "Achievement", "Bio", "Gallery", "Contact"];
   const [isActiveNav, setIsActiveNav] = useState("hi");
   const handleNav = (inp) => {
@@ -13,7 +13,7 @@ const NavComp = ({ isTop }) => {
     <div id="navbar" className={`flex-row sp-bw navBar width-80 m-auto p-20`}>
       {navArr.map((str) => (
         <Link
-          to={str.toLocaleLowerCase()}
+          to={str.toLowerCase()}
           spy={true}
           smooth={true}
           duration={300}
