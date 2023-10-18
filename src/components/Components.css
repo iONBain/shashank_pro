@@ -1,0 +1,14 @@
+.active-nav{
+    color: var(--accent);
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--secondary);
+    /* font-weight: 600; */
+    letter-spacing: 4px;
+}
+.img-hover-tilt img{
+    transition: all 0.2s ease-in;
+}
+
+.img-hover-tilt:hover img{
+    transform: translate(-15px,-20px) scale(1.2) rotate(5deg);
+}
