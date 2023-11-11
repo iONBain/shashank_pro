@@ -31,6 +31,9 @@
 .gap-10{
   gap: 20px;
 }
+.gap-5{
+  gap: 10px;
+}
 .gap-20{
   gap: 10%;
 }
@@ -41,10 +44,10 @@
   text-align: center;
 }
 .spacer{
-  height: 7vh;
+  height: 9.5vh;
 }
 .invisible-nav{
-  height: 50px;
+  height: 77px;
 }
 .bg-offwhite{
   background-color: rgb(240, 236, 236);
@@ -63,16 +66,16 @@
   padding-bottom: 40px;
 }
 .imgGal{
-  width: 170px;
+  width: 190px;
   border-radius: 12px;
-  height: 125px;
+  height: 115px;
   object-fit: cover;
   transition: all 0.2s ease-in;
 }
 .imgGal:hover{
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
-  transform: scale(1.1) ;
+  transform: scale(1.05) ;
 }
 .imgBio{
   max-width: 100%;
@@ -142,6 +145,7 @@
 
 /* flex-row sp-bw navBar width-80 m-auto p-20  */
 .navbar-content {
+  padding: 15px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,3 +155,13 @@
 }
 
 
+
+
+@media (max-width: 767px) {
+  .imgGal {
+    width: 140px; /* Width for mobile devices */
+  }
+  .navbar-content{
+    font-size: smaller;
+  }
+}

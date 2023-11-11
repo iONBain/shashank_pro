@@ -1,9 +1,12 @@
+.t-smooth{
+    transition: all 0.3s ease-in;
+}
 .active-nav{
     color: var(--accent);
     /* text-decoration: underline; */
     border-bottom: 2px solid var(--secondary);
     /* font-weight: 600; */
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 .img-hover-tilt img{
     transition: all 0.2s ease-in;
