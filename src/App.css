@@ -62,7 +62,7 @@
 .imgGal{
   width: 200px;
   border-radius: 12px;
-  height: 100px;
+  height: 125px;
   object-fit: cover;
   transition: all 0.2s ease-in;
 }
@@ -70,9 +70,11 @@
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   transform: scale(1.1) ;
-
 }
-
+.text-justify{
+  text-align: justify;
+  letter-spacing: 1px;
+}
 
 /* images responsive */
 .image-container {
