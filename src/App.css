@@ -44,7 +44,7 @@
   text-align: center;
 }
 .spacer{
-  height: 9.5vh;
+  height: 10vh;
 }
 .invisible-nav{
   height: 77px;
@@ -148,9 +148,8 @@
   padding: 15px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%; /* Ensure it takes the full width */
-  max-width: 1200px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center the content */
 }
 

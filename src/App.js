@@ -21,13 +21,12 @@ function App() {
   useEffect(() => {
     const spacer = document.getElementById("topSpacer");
     const handleScroll = () => {
-      if (window.scrollY > spacer.clientHeight) {
+      if (window.scrollY > spacer.getBoundingClientRect().height) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -68,7 +67,10 @@ function App() {
         <Spacer />
         <Gallery />
       </Element>
-      <Element name="contact" className="scrollable-container bg-offwhite p-bot-40">
+      <Element
+        name="contact"
+        className="scrollable-container bg-offwhite p-bot-40"
+      >
         <Spacer />
         <Contact />
       </Element>
