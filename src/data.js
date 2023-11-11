@@ -21,6 +21,23 @@ const achievementArr = [
     }
 ]
 
+const reachOutArr = [
+    {
+        heading: "South Bombay",
+        subHeading: "Powai",
+        description:"Lorem ipsum elcazo dounno, 123/C Street ABC. Lorem ipsum elcazo dounno, 123/C Street ABC"
+    },
+    {
+        heading: "North India",
+        subHeading: "Punjab",
+        description:"Lorem ipsum elcazo dounno, 123/C Street ABC"
+    },
+    {
+        heading: "Central Chhattisgarh",
+        subHeading: "Raipur",
+        description:"Lorem ipsum elcazo dounno, 123/C Street ABC"
+    }
+]
 
 
-export {achievementArr}
+export {achievementArr, reachOutArr}

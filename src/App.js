@@ -74,7 +74,7 @@ function App() {
         <YoutubeComp />
       </Element>
       <Spacer />
-      <Element name="achievement" className="scrollable-container">
+      <Element name="achievement" className="scrollable-container bg-offwhite">
         <Achievements />
       </Element>
       <Spacer />
@@ -86,10 +86,11 @@ function App() {
         <Gallery />
       </Element>
       <Spacer />
-      <Element name="contact" className="scrollable-container">
+      <Element name="contact" className="scrollable-container bg-offwhite">
         <Contact />
       </Element>
       <Spacer />
+      
     </div>
   );
 }
