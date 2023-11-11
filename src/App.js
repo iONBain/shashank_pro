@@ -13,46 +13,27 @@ import Footer from "./components/Footer";
 const Spacer = () => {
   return <div className="spacer"></div>;
 };
+const InvisibleNav = () => {
+  return <div className="invisible-nav"></div>;
+};
 function App() {
-  // const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const spacer = document.getElementById("topSpacer");
+    const handleScroll = () => {
+      if (window.scrollY > spacer.clientHeight) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
 
-  // useEffect(() => {
-  //   const spacer = document.getElementById("topSpacer")
-  //   const navbar = document.getElementById("navbar")
-  //   const handleScroll = () => {
-  //     console.log(window.scrollY)
-  //     if (window.scrollY >= spacer.clientHeight) {
-  //       navbar.classList.add('sticky');
-  //       } else {
-  //         navbar.classList.remove('sticky');
-  //     }
+    window.addEventListener("scroll", handleScroll);
 
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  // const [isSticky, setIsSticky] = useState(false);
-  // useEffect(() => {
-  //   const spacer = document.getElementById("topSpacer");
-  //   const handleScroll = () => {
-  //     if (window.scrollY > spacer.clientHeight) {
-  //       setIsSticky(true);
-  //     } else {
-  //       setIsSticky(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="App">
@@ -69,31 +50,30 @@ function App() {
         />
       </div>
 
-      <NavComp />
-      <Spacer />
-      <Element name="portfolio" className="scrollable-container">
+      <NavComp isSticky={isSticky} />
+      {isSticky && <InvisibleNav />}
+      <Element name="portfolio" className="scrollable-container p-bot-40">
+        <Spacer />
         <YoutubeComp />
       </Element>
-      <Spacer />
       <Element name="achievement" className="scrollable-container bg-offwhite">
-      <Spacer />
+        <Spacer />
         <Achievements />
       </Element>
-      <Spacer />
       <Element name="bio" className="scrollable-container">
+        <Spacer />
         <Bio />
       </Element>
-      <Spacer />
-      <Element name="gallery" className="scrollable-container">
+      <Element name="gallery" className="scrollable-container p-bot-40">
+        <Spacer />
         <Gallery />
       </Element>
-      <Spacer />
-      <Element name="contact" className="scrollable-container bg-offwhite">
-      <Spacer />
+      <Element name="contact" className="scrollable-container bg-offwhite p-bot-40">
+        <Spacer />
         <Contact />
       </Element>
       {/* <Spacer /> */}
-      <Footer/>
+      <Footer />
     </div>
   );
 }

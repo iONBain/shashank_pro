@@ -4,13 +4,13 @@ const Bio = ({ comp }) => {
   return (
     <React.Fragment>
       <h2 className="text-center p-20">Bio</h2>
-      <div className="flex-row gap-10  width-80 m-auto sp-bw">
+      <div className="flex-row gap-10  width-80 m-auto sp-bw flex-wrap">
         <img
           src="/imgGal/ShankBox-Bio.png"
-          className="bor-rad-5"
+          className="bor-rad-5 imgBio flex1"
           alt="img - hero"
         />
-        <div className="bor-2 flex-col sp-bw bor-rad-5">
+        <div className="bor-2 flex-col sp-bw bor-rad-5 flex1">
           <p className="p-20 text-justify">
             Welcome to the vibrant world of <b> Shashank Udakhe </b>, your go-to
             entertainer and video creator extraordinaire! With an infectious

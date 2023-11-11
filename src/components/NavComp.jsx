@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Components.css";
 import { Link } from "react-scroll";
 
-const NavComp = () => {
+const NavComp = ({ isSticky }) => {
   const navArr = ["Portfolio", "Achievement", "Bio", "Gallery", "Contact"];
   const [isActiveNav, setIsActiveNav] = useState("hi");
   const handleNav = (inp) => {
@@ -10,19 +10,21 @@ const NavComp = () => {
     console.log(isActiveNav);
   };
   return (
-    <div id="navbar" className={`flex-row sp-bw navBar width-80 m-auto p-20`}>
-      {navArr.map((str) => (
-        <Link
-          to={str.toLowerCase()}
-          spy={true}
-          smooth={true}
-          duration={300}
-          onClick={() => handleNav(str)}
-          className={`m-pointer ${str === isActiveNav && "active-nav"}`}
-        >
-          {str}
-        </Link>
-      ))}
+    <div id="navbar" className={isSticky ? "navbar sticky" : "navbar"}>
+      <div className="navbar-content">
+        {navArr.map((str) => (
+          <Link
+            to={str.toLowerCase()}
+            spy={true}
+            smooth={true}
+            duration={300}
+            onClick={() => handleNav(str)}
+            className={`m-pointer ${str === isActiveNav && "active-nav"}`}
+          >
+            {str}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };

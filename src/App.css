@@ -41,7 +41,10 @@
   text-align: center;
 }
 .spacer{
-  height: 10vh;
+  height: 7vh;
+}
+.invisible-nav{
+  height: 50px;
 }
 .bg-offwhite{
   background-color: rgb(240, 236, 236);
@@ -60,7 +63,7 @@
   padding-bottom: 40px;
 }
 .imgGal{
-  width: 200px;
+  width: 170px;
   border-radius: 12px;
   height: 125px;
   object-fit: cover;
@@ -70,6 +73,10 @@
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   transform: scale(1.1) ;
+}
+.imgBio{
+  max-width: 100%;
+  /* max-height: 100%; */
 }
 .text-justify{
   text-align: justify;
@@ -110,24 +117,37 @@
   z-index: 2;
 }
 
-.navBar{
-  z-index: 5;
-  min-height: 50px;
-  /* border: 2px solid red; */
-  background-color: rgba(240, 248, 255, 0.254);
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  width: 100vw;
 }
-.navBar p{
-  transition: all 0.2s ease;
 
-}
-
-
-
-
-.navBar.sticky {
-  position: fixed; /* Position becomes fixed on scroll */
+.navbar.sticky {
+  position: fixed;
   top: 0;
+  width: calc(100% - 20px);
+  width: 100vw;
+  background-color:rgba(228, 219, 219, 0.423);
+  z-index: 100;
+  /* Add other styling as needed */
 }
 
+
+/* flex-row sp-bw navBar width-80 m-auto p-20  */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Ensure it takes the full width */
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the content */
+}
 
 

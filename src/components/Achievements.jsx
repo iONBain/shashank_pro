@@ -18,7 +18,7 @@ const Achievements = () => {
     return(
         <React.Fragment>
         <h2 className="text-center p-20">Achievements</h2>
-        <div className="flex-row width-80 m-auto sp-bw flex-wrap">
+        <div className="flex-row width-80 m-auto sp-bw flex-wrap p-bot-40">
             {data.map(({headerVal,cntVal,imgVal})=>
             <AchCard headerVal={headerVal} cntVal={cntVal} imgVal={imgVal} />
             )}

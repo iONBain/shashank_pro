@@ -19,7 +19,7 @@ const Contact = () => {
     
     return(
         <React.Fragment>
-        <h2 className="text-center p-20">{"< < < "}Reach Me Out {" > > >"}</h2>
+        <h2 className="text-center p-20">{"< "}Reach Me {" />"}</h2>
         <div className="flex-row width-80 gap-10 m-auto sp-bw flex-wrap p-bot-40 ">
             {data.map(({heading,subHeading,description})=>
             <ReachCard heading={heading} subHeading={subHeading} description={description} />
