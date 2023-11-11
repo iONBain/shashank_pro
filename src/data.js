@@ -23,38 +23,33 @@ const achievementArr = [
 
 const reachOutArr = [
     {
-        heading: "South Bombay",
+        heading: "Bombay",
         subHeading: "Powai",
         description:"Lorem ipsum elcazo dounno, 123/C Street ABC. Lorem ipsum elcazo dounno, 123/C Street ABC"
     },
     {
-        heading: "North India",
+        heading: "India",
         subHeading: "Punjab",
         description:"Lorem ipsum elcazo dounno, 123/C Street ABC"
     },
     {
-        heading: "Central Chhattisgarh",
+        heading: "Chhattisgarh",
         subHeading: "Raipur",
         description:"Lorem ipsum elcazo dounno, 123/C Street ABC"
     }
 ]
 
 const imgGalleryArr = [
-    "/imgGal/ShankBox-01.JPG",
-    "/imgGal/ShankBox-02.png",
-    "/imgGal/ShankBox-03.png",
-    "/imgGal/ShankBox-04.png",
-    "/imgGal/ShankBox-05.png",
-    "/imgGal/ShankBox-06.png",
-    "/imgGal/ShankBox-07.png",
-    "/imgGal/ShankBox-08.png",
-    "/imgGal/ShankBox-09-01.png",
-    "/imgGal/ShankBox-09-03.png",
-    "/imgGal/ShankBox-09.png",
-    "/imgGal/ShankBox-10.png",
-    "/imgGal/ShankBox-11.png",
-    "/imgGal/ShankBox-12-01.png",
-    "/imgGal/ShankBox-12.png",   
+    "/imgGal/sBH (1).png",
+    "/imgGal/sBH (2).png",
+    "/imgGal/sBH (3).png",
+    "/imgGal/sBH (4).png",
+    "/imgGal/sBH (5).png",
+    "/imgGal/sBH (6).png",
+    "/imgGal/sBH (7).png",
+    "/imgGal/sBH (8).png",
+    "/imgGal/sBH (9).png",
+    "/imgGal/sBH (10).png",
 ]
 
 export {achievementArr, reachOutArr, imgGalleryArr}
