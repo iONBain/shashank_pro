@@ -8,6 +8,7 @@ import { StickyContainer } from "react-sticky";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Bio from "./components/Bio";
+import Footer from "./components/Footer";
 
 const Spacer = () => {
   return <div className="spacer"></div>;
@@ -75,6 +76,7 @@ function App() {
       </Element>
       <Spacer />
       <Element name="achievement" className="scrollable-container bg-offwhite">
+      <Spacer />
         <Achievements />
       </Element>
       <Spacer />
@@ -87,10 +89,11 @@ function App() {
       </Element>
       <Spacer />
       <Element name="contact" className="scrollable-container bg-offwhite">
+      <Spacer />
         <Contact />
       </Element>
-      <Spacer />
-      
+      {/* <Spacer /> */}
+      <Footer/>
     </div>
   );
 }

@@ -39,5 +39,22 @@ const reachOutArr = [
     }
 ]
 
+const imgGalleryArr = [
+    "/imgGal/ShankBox-01.JPG",
+    "/imgGal/ShankBox-02.png",
+    "/imgGal/ShankBox-03.png",
+    "/imgGal/ShankBox-04.png",
+    "/imgGal/ShankBox-05.png",
+    "/imgGal/ShankBox-06.png",
+    "/imgGal/ShankBox-07.png",
+    "/imgGal/ShankBox-08.png",
+    "/imgGal/ShankBox-09-01.png",
+    "/imgGal/ShankBox-09-03.png",
+    "/imgGal/ShankBox-09.png",
+    "/imgGal/ShankBox-10.png",
+    "/imgGal/ShankBox-11.png",
+    "/imgGal/ShankBox-12-01.png",
+    "/imgGal/ShankBox-12.png",   
+]
 
-export {achievementArr, reachOutArr}
+export {achievementArr, reachOutArr, imgGalleryArr}
