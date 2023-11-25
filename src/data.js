@@ -12,7 +12,7 @@ const achievementArr = [
     {
         headerVal:"Reach",
         imgVal:"/assets/rocket-col.png",
-        cntVal:"25M+"
+        cntVal:"30M+"
     },
     {
         headerVal:"Likes",
