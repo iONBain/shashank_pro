@@ -7,12 +7,12 @@ const achievementArr = [
     {
         headerVal:"Subscribers",
         imgVal:"/assets/insta-col.png",
-        cntVal:"150K+"
+        cntVal:"260K+"
     },
     {
         headerVal:"Reach",
         imgVal:"/assets/rocket-col.png",
-        cntVal:"25M+"
+        cntVal:"30M+"
     },
     {
         headerVal:"Likes",
